@@ -21,3 +21,16 @@ var array2 = Array(elem0, elem1);
 var array3 = ['elem0', 'elem1'];
 ```
 
+
+### Acessando items do arrays
+
+Forma de acesar um item do `array` atraves da sua índice(index):
+
+```js
+var first = array1[0];
+// elem0
+
+var last = array1[array1.length - 1];
+// array1
+```
+
