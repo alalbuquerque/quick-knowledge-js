@@ -33,6 +33,7 @@ var first = array1[0];
 
 var last = array1[array1.length - 1];
 // array1
+
 ```
 
 ### Interando arrays
@@ -54,3 +55,51 @@ array1.forEach(function(element, index, array) {
 // a[1] = elem1
 
 ```
+
+Exemplo de algoritmo:
+```js
+var fibonacci = []
+fibonacci[1] = 1
+fibonacci[2] = 1
+
+for(var i = 3; i <= 20; i++) {
+    fibonacci[i] = fibonacci[i-1] + fibonacci[i-2];
+}
+
+for (var i = 1; i < fibonacci.length; i++) {
+    console.log(fibonacci[i])
+}
+```
+### Povoando um array
+Existe alguns métodos para inserir elementos num array. 
+
+Um deles é atribuindo valores aos seus elementos. 
+Por exemplo:
+
+```js
+
+var array3 = [];
+array3[0] = 'elem0';
+array3[1] = 'elem1';
+array3[2] = 'elem2';
+
+console.log(array3)
+// ["elem0", "elem1", "elem2"]
+
+```
+
+Um deles é atribuindo valores aos seus elementos. 
+Por exemplo:
+
+```js
+
+var array3 = [];
+array3[0] = 'elem0';
+array3[1] = 'elem1';
+array3[2] = 'elem2';
+
+console.log(array3)
+// ["elem0", "elem1", "elem2"]
+
+```
+
