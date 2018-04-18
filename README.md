@@ -2,7 +2,6 @@
 Repositório contendo estudos de sobre javascript e suas abstrações. Estruturas de dados e algoritmos complementáres.
 
 * [Objetos Globais](#objetos-globais)
-
 * [Objetos padrão](#objetos-padrao)
 * [Propriedades de valor](#propriedades-de-valor)
 * [Propriedades de função](#propriedades-de-função)
