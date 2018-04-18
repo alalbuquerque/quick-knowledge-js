@@ -1,17 +1,18 @@
-JavaScript
+# JavaScript
 This part of the JavaScript section on MDN serves as a repository of facts about the JavaScript language. Read more about this reference.
 
-Global Objects
+## Global Objects
 This chapter documents all the JavaScript standard built-in objects, along with their methods and properties.
 
-Value properties
+## Value properties
 These global properties return a simple value; they have no properties or methods.
 
 Infinity
 NaN
 undefined
 null literal
-Function properties
+
+## Function properties
 These global functions—functions which are called globally rather than on an object—directly return their results to the caller.
 
 eval()
@@ -26,7 +27,8 @@ encodeURI()
 encodeURIComponent()
 escape()
 unescape()
-Fundamental objects
+
+## Fundamental objects
 These are the fundamental, basic objects upon which all other objects are based. This includes objects that represent general objects, functions, and errors.
 
 Object
@@ -41,18 +43,21 @@ ReferenceError
 SyntaxError
 TypeError
 URIError
-Numbers and dates
+
+## Numbers and dates
 These are the base objects representing numbers, dates, and mathematical calculations.
 
 Number
 Math
 Date
-Text processing
+
+## Text processing
 These objects represent strings and support manipulating them.
 
 String
 RegExp
-Indexed collections
+
+## Indexed collections
 These objects represent collections of data which are ordered by an index value. This includes (typed) arrays and array-like constructs.
 
 Array
@@ -65,14 +70,16 @@ Int32Array
 Uint32Array
 Float32Array
 Float64Array
-Keyed collections
+
+## Keyed collections
 These objects represent collections which use keys; these contain elements which are iterable in the order of insertion.
 
 Map
 Set
 WeakMap
 WeakSet
-Vector collections
+
+## Vector collections
 SIMD vector data types are objects where data is arranged into lanes.
 
 SIMD
@@ -88,7 +95,8 @@ SIMD.Bool8x16
 SIMD.Bool16x8
 SIMD.Bool32x4
 SIMD.Bool64x2
-Structured data
+
+## Structured data
 These objects represent and interact with structured data buffers and data coded using JavaScript Object Notation (JSON).
 
 ArrayBuffer
@@ -104,7 +112,8 @@ AsyncFunction
 Reflection
 Reflect
 Proxy
-Internationalization
+
+## Internationalization
 Additions to the ECMAScript core for language-sensitive functionalities.
 
 Intl
@@ -122,7 +131,8 @@ WebAssembly.LinkError
 WebAssembly.RuntimeError
 Other
 arguments
-Statements
+
+## Statements
 This chapter documents all the JavaScript statements and declarations.
 
 For an alphabetical listing see the sidebar on the left.
@@ -144,14 +154,16 @@ throw
 Throws a user-defined exception.
 try...catch
 Marks a block of statements to try, and specifies a response, should an exception be thrown.
-Declarations
+
+## Declarations
 var
 Declares a variable, optionally initializing it to a value.
 let
 Declares a block scope local variable, optionally initializing it to a value.
 const
 Declares a read-only named constant.
-Functions and classes
+
+## Functions and classes
 function
 Declares a function with the specified parameters.
 function*
@@ -162,7 +174,8 @@ return
 Specifies the value to be returned by a function.
 class
 Declares a class.
-Iterations
+
+## Iterations
 do...while
 Creates a loop that executes a specified statement until the test condition evaluates to false. The condition is evaluated after executing the statement, resulting in the specified statement executing at least once.
 for
@@ -186,12 +199,13 @@ label
 Provides a statement with an identifier that you can refer to using a break or continue statement.
 with
 Extends the scope chain for a statement.
-Expressions and operators
+
+## Expressions and operators
 This chapter documents all the JavaScript expressions and operators.
 
 For an alphabetical listing see the sidebar on the left.
 
-Primary expressions
+## Primary expressions
 Basic keywords and general expressions in JavaScript.
 
 this
@@ -217,11 +231,12 @@ Object initializer/literal syntax.
 /ab+c/i
 Regular expression literal syntax.
 ( )
-Grouping operator.
+
+## Grouping operator.
 Left-hand-side expressions
 Left values are the destination of an assignment.
 
-Property accessors
+## Property accessors
 Member operators provide access to a property or method of an object
 (object.property and object["property"]).
 new
@@ -232,7 +247,8 @@ super
 The super keyword calls the parent constructor.
 ...obj
 Spread syntax allows an expression to be expanded in places where multiple arguments (for function calls) or multiple elements (for array literals) are expected.
-Increment and decrement
+
+## Increment and decrement
 Postfix/prefix increment and postfix/prefix decrement operators.
 
 A++
@@ -243,7 +259,8 @@ Postfix decrement operator.
 Prefix increment operator.
 --A
 Prefix decrement operator.
-Unary operators
+
+## Unary operators
 A unary operation is operation with only one operand.
 
 delete
@@ -253,18 +270,21 @@ The void operator discards an expression's return value.
 typeof
 The typeof operator determines the type of a given object.
 +
+
 The unary plus operator converts its operand to Number type.
+
 -
 The unary negation operator converts its operand to Number type and then negates it.
 ~
 Bitwise NOT operator.
 !
 Logical NOT operator.
-Arithmetic operators
+
+## Arithmetic operators
 Arithmetic operators take numerical values (either literals or variables) as their operands and return a single numerical value.
 
 +
-Addition operator.
+## Addition operator.
 -
 Subtraction operator.
 /
@@ -275,7 +295,8 @@ Multiplication operator.
 Remainder operator.
 **
 Exponentiation operator.
-Relational operators
+
+## Relational operators
 A comparison operator compares its operands and returns a Boolean value based on whether the comparison is true.
 
 in
@@ -292,13 +313,15 @@ Less than or equal operator.
 Greater than or equal operator.
 Note: => is not an operator, but the notation for Arrow functions.
 
-Equality operators
+## Equality operators
 The result of evaluating an equality operator is always of type Boolean based on whether the comparison is true.
 
 ==
 Equality operator.
 !=
+
 Inequality operator.
+
 ===
 Identity operator.
 !==
@@ -332,7 +355,7 @@ Conditional (ternary) operator
 (condition ? ifTrue : ifFalse)
 The conditional operator returns one of two values based on the logical value of the condition.
 
-Assignment operators
+## Assignment operators
 An assignment operator assigns a value to its left operand based on the value of its right operand.
 
 =
