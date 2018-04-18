@@ -6,7 +6,7 @@ Resumo
 - [Objetos Globais](README.md#objetos-globais)
 - [Array](README.md#array)
 
-## Objetos Globais <a id=“objetos-globais”><a/> 
+## Objetos Globais <a name=“objetos-globais”><a/> 
 Objetos globais se referem aos objetos no escopo global (somente se o modo estrito/strict mode do ECMAScript 5 não for usado; Nesse caso retorna undefined). O objeto global pode ser acessado usando o operador this no escopo global. De fato, o escopo global consiste em propriedades do objeto global, incluindo propriedades herdadas, se houver.
 
 ### Objetos padrão
@@ -20,7 +20,7 @@ Propriedades globais retornam um valor simples; eles não tem propriedades ou m�
 
 
 
-## Array <a id=“array”><a/> 
+## Array <a name=“array”><a/> 
 Array é uma estrutura de dados que armazena uma coleção de elementos de tal forma que cada um dos elementos contidos nele possa ser acessado por meio de um índice(index) ou uma chave(key). Essa estrutura pode ser conhecida como variável indexada, coleções indexadas, coleções de dados, vetor(para arrays unidimensionais) e matriz (para arrays bidimensionais).
 
 Mas no Javascript o `array` é um objeto global que é usado na construção dessa estrutura de dado. 
