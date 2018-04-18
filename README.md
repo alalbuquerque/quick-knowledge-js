@@ -2,9 +2,16 @@
 Repositório contendo estudos de sobre javascript e suas abstrações. Estruturas de dados e algoritmos complementáres.
 
 * [Objetos Globais](#objetos-globais)
+
 * [Objetos padrão](#objetos-padrao)
 * [Propriedades de valor](#propriedades-de-valor)
 * [Propriedades de função](#propriedades-de-função)
+* [eval()](#eval)
+* [isfinite()](#isfinite)
+* [isNaN()](#isnan)
+* [parseFloat()](#parsefloat)
+* [parseInt()](#parseint)
+
 * [Array](#array)
 
 ## Objetos Globais 
@@ -13,68 +20,100 @@ Objetos globais se referem aos objetos no escopo global (somente se o modo estri
 ### Propriedades de valor
 Propriedades globais retornam um valor simples; eles não tem propriedades ou métodos.
 
-- Infinity
-- NaN
-- undefined
-- null
+- `Infinity`
+- `NaN`
+- `undefined`
+- `null`
 
 ### Propriedades de função
-Estas funções globais —funções que são chamadas globalmente ao invés de em um objeto—retornam diretamente seus resultados a quem chama.
+Estas funções globais que são chamadas globalmente ao invés de em um objeto—retornam diretamente seus resultados a quem chama.
 
 #### eval()
-Se o argumento de eval() não é uma string, eval() retorna o argumento inalterado. No exemplo a seguir, o construtor String é especificado, e eval() retorna um objeto String em vez de avaliar a string.
+Se o argumento de `eval()` não é uma string, `eval()` retorna o argumento inalterado. No exemplo a seguir, o construtor `String` é especificado, e `eval()` retorna um objeto String em vez de avaliar a string.
 
 ```js
-eval(new String("2 + 2")); // retorna um objeto String contendo "2 + 2"
-eval("2 + 2");             // retorna 4
+eval(new String("2 + 2")); 
+// retorna um objeto String contendo "2 + 2"
+
+eval("2 + 2");             
+// retorna 4
 ```
 
 #### isFinite()
-A função global isFinite() determina se o valor transmitido é um número finito. Se necessário, o parâmetro é primeiro convertido a um número.
-
+A função global `isFinite()` determina se o valor transmitido é um número finito. Se necessário, o parâmetro é primeiro convertido a um número.
 ```js
-isFinite(Infinity);  // false
-isFinite(NaN);       // false
-isFinite(-Infinity); // false
+isFinite(Infinity);  
+// false
 
-isFinite(0);         // true
-isFinite(2e64);      // true
-isFinite(null);      // true
+isFinite(NaN);       
+// false
 
+isFinite(-Infinity); 
+// false
 
-isFinite("0");       // true, teria sido false com o  
-                     // mais robusto Number.isFinite("0")
+isFinite(0);         
+// true
+
+isFinite(2e64);      
+// true
+
+isFinite(null);      
+// true
+
+isFinite("0");       
+// true, teria sido false com o  
+// mais robusto Number.isFinite("0")
 ```
 
 #### isNaN()
-A função isNAN() determina se o valor é NaN ou não. 
-
+A função `isNAN()` determina se o valor é `NaN` ou não. 
 ```js
-isNaN(NaN);       // true
-isNaN(undefined); // true
-isNaN({});        // true
+isNaN(NaN);       
+// true
 
-isNaN(true);      // false
-isNaN(null);      // false
-isNaN(37);        // false
+isNaN(undefined); 
+// true
+
+isNaN({});        
+// true
+
+isNaN(true);      
+// false
+
+isNaN(null);      
+// false
+
+isNaN(37);        
+// false
 
 // strings
-isNaN("37");      // false: "37" is converted to the number 37 which is not NaN
-isNaN("37.37");   // false: "37.37" is converted to the number 37.37 which is not NaN
-isNaN("");        // false: the empty string is converted to 0 which is not NaN
-isNaN(" ");       // false: a string with spaces is converted to 0 which is not NaN
+isNaN("37");      
+// false: "37" is converted to the number 37 which is not NaN
+
+isNaN("37.37");   
+// false: "37.37" is converted to the number 37.37 which is not NaN
+
+isNaN("");        
+// false: the empty string is converted to 0 which is not NaN
+
+isNaN(" ");       
+// false: a string with spaces is converted to 0 which is not NaN
 
 // dates
-isNaN(new Date());                // false
-isNaN(new Date().toString());     // true
+isNaN(new Date());                
+// false
+
+isNaN(new Date().toString());     
+// true
 
 // Esse é um falso positivo e é a razão para isNaN não seja totalmente confiável.
-isNaN("blabla")   // true: "blabla" é convertido para número. 
-                  // A análise desse número falha e retorna NaN como resultado.
+isNaN("blabla")   
+// true: "blabla" é convertido para número. 
+// A análise desse número falha e retorna NaN como resultado.
 ```
 
 #### parseFloat()
-A função parseFloat() analisa um argumento string e retorna um número de ponto flutuante.
+A função `parseFloat()` analisa um argumento string e retorna um número de ponto flutuante.
 ```js
 //Os exemplo a seguir sempre retorna 3.14
 parseFloat("3.14");
@@ -84,7 +123,7 @@ parseFloat("3.14more non-digit characters");
 ```
 
 #### parseInt()
-A função parseInt() analisa um argumento string e retorna um inteiro na base especificada.
+A função `parseInt()` analisa um argumento string e retorna um inteiro na base especificada.
 ```js
 //Os exemplo a seguir sempre retorna 15
 parseInt(" 0xF", 16);
@@ -101,13 +140,29 @@ parseInt("15px", 10);
 parseInt("12", 13);
 ```
 
+#### decodeURI()
+A função `decodeURI()` decodifica Uniform Resource Identifier (URI) previamente criado por encodeURI ou por uma rotina similar.
+```js
+decodeURI(encodedURI)
+```
 
+#### decodeURIComponent()
+O método `decodeURIComponent()` decodifica um componente Identificador Uniforme de Recursos (URI) criado anteriormente por um encodeURIComponent ou por uma rotina semelhante.
+```js
+decodeURIComponent(encodedURI)
+```
 
-##### decodeURI()
-##### decodeURIComponent()
-##### encodeURI()
-##### encodeURIComponent()
+#### encodeURI()
+A função `encodeURI()` codifica um URI (Uniform Resource Identifier) substituindo cada instância de certos caracteres por uma, duas, três ou quatro seqüências de escape representando a codificação UTF-8 do caractere (serão apenas quatro seqüências de escape para caracteres compostos). de dois caracteres "substitutos").
+```js
+encodeURI(URI)
+```
 
+#### encodeURIComponent()
+O método `encodeURIComponent()` codifica  uma URI (Identificador recurso uniforme) substituindo cada ocorrência de determinados caracteres por um, dois, três, ou quatro seqüências de escape que representam a codificação UTF-8 do caractere (só será quatro seqüências de escape para caracteres compostos por dois caracteres "substituto").
+```js
+encodeURIComponent(str);
+```
 
 
 ## Array  
