@@ -12,10 +12,7 @@ Resumo
 ## Objetos Globais 
 Objetos globais se referem aos objetos no escopo global (somente se o modo estrito/strict mode do ECMAScript 5 não for usado; Nesse caso retorna undefined). O objeto global pode ser acessado usando o operador this no escopo global. De fato, o escopo global consiste em propriedades do objeto global, incluindo propriedades herdadas, se houver.
 
-### Objetos padrão
-
-#### Propriedades de valor
-
+### Propriedades de valor
 Propriedades globais retornam um valor simples; eles não tem propriedades ou métodos.
 
 - Infinity
@@ -23,12 +20,34 @@ Propriedades globais retornam um valor simples; eles não tem propriedades ou m�
 - undefined
 - null
 
-#### Propriedades de função
-
+### Propriedades de função
 Estas funções globais —funções que são chamadas globalmente ao invés de em um objeto—retornam diretamente seus resultados a quem chama.
 
-##### eval()
-##### isFinite()
+#### eval()
+Se o argumento de eval() não é uma string, eval() retorna o argumento inalterado. No exemplo a seguir, o construtor String é especificado, e eval() retorna um objeto String em vez de avaliar a string.
+
+```js
+eval(new String("2 + 2")); // retorna um objeto String contendo "2 + 2"
+eval("2 + 2");             // retorna 4
+```
+
+#### isFinite()
+A função global isFinite() determina se o valor transmitido é um número finito. Se necessário, o parâmetro é primeiro convertido a um número.
+
+```js
+isFinite(Infinity);  // false
+isFinite(NaN);       // false
+isFinite(-Infinity); // false
+
+isFinite(0);         // true
+isFinite(2e64);      // true
+isFinite(null);      // true
+
+
+isFinite("0");       // true, teria sido false com o  
+                     // mais robusto Number.isFinite("0")
+```
+
 ##### isNaN()
 ##### parseFloat()
 ##### parseInt()
