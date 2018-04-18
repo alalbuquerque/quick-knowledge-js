@@ -50,11 +50,58 @@ console.log(1 / maxNumber);
 ```
 
 ### NaN
+A propriedade `NaN` é um valor representativo de Not-A-Number.
+```js 
+function sanitise(x) {
+  if (isNaN(x)) {
+    return NaN;
+  }
+  return x;
+}
+
+console.log(sanitise('1'));
+// expected output: "1"
+
+console.log(sanitise('NotANumber'));
+// expe
+```
+
+
 ### undefined
+A propriedade `undefined`que representa o valor primitivo undefined.
+```js
+function test(t) {
+  if (t === undefined) {
+     return 'Undefined value!';
+  }
+  return t;
+}
+
+var x;
+
+console.log(test(x));
+// expected output: "Undefined value!"
+```
+
 ### null
+A propriedade `null` representa a ausência intencional de qualquer valor de objeto.
+```js
+function getVowels(str) {
+  var m = str.match(/[aeiou]/gi);
+  if (m === null) {
+    return 0;
+  }
+  return m.length;
+}
+
+console.log(getVowels('sky'));
+// expected output: 0
+
+```
 
 ## Propriedades de função
 Estas funções globais que são chamadas globalmente ao invés de em um objeto—retornam diretamente seus resultados a quem chama.
+
 ### eval()
 Se o argumento de `eval()` não é uma string, `eval()` retorna o argumento inalterado. No exemplo a seguir, o construtor `String` é especificado, e `eval()` retorna um objeto String em vez de avaliar a string.
 
