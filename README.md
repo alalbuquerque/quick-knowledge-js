@@ -199,7 +199,25 @@ Nomes para serem usandos pela função como nomes formais de argumentos. Cada um
 Uma string que contém as instruções JavaScript que compõem a definição da função.
 
 ### Boolean 
+O objeto Boolean é um objeto wrapper para um valor booleano.
+```js
+new Boolean([value])
+// value Opcional. O valor inicial do objeto Boolean.
+```
+
 ### Error
+O construtor de Error cria um objeto de erro. Instâncias de objetos Error são lançadas quando erros de tempo de execução ocorrem. O objeto Error também pode ser usado como objeto base para exceções definidas pelo usuário. Veja abaixo tipos de erro padrões embutidos.
+```js
+new Error([message[, fileName[, lineNumber]]])
+```
+`message`
+Opcional. Descrição do erro legível para humanos.
+`fileName` 
+Opcional. O valor da propriedade fileName  no objeto de erro criado. O padrão é o nome do arquivo contendo o código que chamou o construtor de Error().
+`lineNumber` 
+Opcional. O valor da propriedade lineNumber no objeto de Error criado. O padrão é o número da linha contendo a invocação do construtor Error().
+
+
 ### EvalError
 ### InternalError
 ### RangeError
