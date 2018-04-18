@@ -25,10 +25,6 @@ Repositório contendo estudos de sobre javascript e suas abstrações. Estrutura
 * [SyntaxError](#syntaxerror)
 * [TypeError](#typeerror)
 * [URIError](#urierror)
-
-
-
-
 * [Array](#array)
 
 
