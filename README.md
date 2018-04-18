@@ -4,7 +4,7 @@ Repositório contendo estudos de sobre javascript e suas abstrações. Estrutura
 * [Objetos Globais](#objetos-globais)
 * [Objetos padrão](#objetos-padrao)
 * [Propriedades de valor](#propriedades-de-valor)
-* [Propriedades de função](#propriedades-de-funcao)
+* [Propriedades de função](#propriedades-de-função)
 * [Array](#array)
 
 ## Objetos Globais 
