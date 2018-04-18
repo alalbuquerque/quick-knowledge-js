@@ -33,10 +33,25 @@ Objetos globais se referem aos objetos no escopo global (somente se o modo estri
 
 ## Propriedades de valor
 Propriedades globais retornam um valor simples; eles não tem propriedades ou métodos.
-- `Infinity`
-- `NaN`
-- `undefined`
-- `null`
+
+### Infinity
+A propriedade `Infinity` é um valor numérico que representa infinito.
+```js
+var maxNumber = Math.pow(10, 1000); // max positive number
+
+if (maxNumber === Infinity) {
+  console.log("Let's call it Infinity!");
+  // expected output: "Let's call it Infinity!"
+}
+
+console.log(1 / maxNumber);
+// expected output: 0
+
+```
+
+### NaN
+### undefined
+### null
 
 ## Propriedades de função
 Estas funções globais que são chamadas globalmente ao invés de em um objeto—retornam diretamente seus resultados a quem chama.
