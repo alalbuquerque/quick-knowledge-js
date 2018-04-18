@@ -3,20 +3,39 @@ Repositório contendo estudos de sobre javascript e suas abstrações. Estrutura
 
 Resumo
 
-- [Objetos Globais](#objetos-globais)
-- [Array](#array)
+* [Objetos Globais](#objetos-globais)
+* [Objetos padrão](#objetos-padrao)
+* [Propriedades de valor](#propriedades-de-valor)
+* [Propriedades de função](#propriedades-de-funcao)
+* [Array](#array)
 
 ## Objetos Globais 
 Objetos globais se referem aos objetos no escopo global (somente se o modo estrito/strict mode do ECMAScript 5 não for usado; Nesse caso retorna undefined). O objeto global pode ser acessado usando o operador this no escopo global. De fato, o escopo global consiste em propriedades do objeto global, incluindo propriedades herdadas, se houver.
 
 ### Objetos padrão
+
 #### Propriedades de valor
+
 Propriedades globais retornam um valor simples; eles não tem propriedades ou métodos.
 
 - Infinity
 - NaN
 - undefined
 - null
+
+#### Propriedades de função
+
+Estas funções globais —funções que são chamadas globalmente ao invés de em um objeto—retornam diretamente seus resultados a quem chama.
+
+##### eval()
+##### isFinite()
+##### isNaN()
+##### parseFloat()
+##### parseInt()
+##### decodeURI()
+##### decodeURIComponent()
+##### encodeURI()
+##### encodeURIComponent()
 
 
 
