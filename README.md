@@ -10,8 +10,22 @@ Repositório contendo estudos de sobre javascript e suas abstrações. Estrutura
 * [isNaN()](#isnan)
 * [parseFloat()](#parsefloat)
 * [parseInt()](#parseint)
-
+* [Objetos fundamentais](#objetos-fundamentais)
+* [Object](#object)
+* [Function](#function)
+* [Boolean](#boolean)
+* [Error](#error)
+* [EvalError](#evalerror)
+* [InternalError](#internalerror)
+* [RangeError](#rangeerror)
+* [ReferenceError](#referenceerror)
+* [StopIteration](#stopinteration)
+* [SyntaxError](#syntaxerror)
+* [TypeError](#typeerror)
+* [URIError](#urierror)
 * [Array](#array)
+
+
 
 ## Objetos Globais 
 Objetos globais se referem aos objetos no escopo global (somente se o modo estrito/strict mode do ECMAScript 5 não for usado; Nesse caso retorna undefined). O objeto global pode ser acessado usando o operador this no escopo global. De fato, o escopo global consiste em propriedades do objeto global, incluindo propriedades herdadas, se houver.
@@ -162,6 +176,43 @@ O método `encodeURIComponent()` codifica  uma URI (Identificador recurso unifor
 ```js
 encodeURIComponent(str);
 ```
+
+## Objetos fundamentais
+Estes são objetos básicos e fundamentais nos quais todos os outros objetos são baseados. Isso inclui objetos que representam objetos genéricos, funções e erros.
+
+### Object
+Cria um novo objeto.
+```js
+new Object( [ valor ] )
+// qualquer valor
+```
+
+### Function
+O construtor Function cria um novo objeto Function. Em JavaScript cada função é, na verdade, um objeto Function.
+```js
+new Function ([arg1[, arg2[, ...argN]],] functionBody)
+```
+`arg1, arg2, ... argN`
+Nomes para serem usandos pela função como nomes formais de argumentos. Cada um deve ser uma string que corresponde para uma válida identidade JavaScript ou uma lista de certas strings separadas com uma vírgula; por exemplo "x", "theValue". our "a,b".
+
+`functionBody`
+Uma string que contém as instruções JavaScript que compõem a definição da função.
+
+### Boolean 
+### Error
+### EvalError
+### InternalError
+### RangeError
+### ReferenceError
+### StopIteration
+### SyntaxError
+### TypeError
+### URIError
+
+
+
+
+
 
 
 ## Array  
