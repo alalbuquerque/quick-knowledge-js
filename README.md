@@ -46,9 +46,63 @@ isFinite("0");       // true, teria sido false com o
                      // mais robusto Number.isFinite("0")
 ```
 
-##### isNaN()
-##### parseFloat()
-##### parseInt()
+#### isNaN()
+A função isNAN() determina se o valor é NaN ou não. 
+
+```js
+isNaN(NaN);       // true
+isNaN(undefined); // true
+isNaN({});        // true
+
+isNaN(true);      // false
+isNaN(null);      // false
+isNaN(37);        // false
+
+// strings
+isNaN("37");      // false: "37" is converted to the number 37 which is not NaN
+isNaN("37.37");   // false: "37.37" is converted to the number 37.37 which is not NaN
+isNaN("");        // false: the empty string is converted to 0 which is not NaN
+isNaN(" ");       // false: a string with spaces is converted to 0 which is not NaN
+
+// dates
+isNaN(new Date());                // false
+isNaN(new Date().toString());     // true
+
+// Esse é um falso positivo e é a razão para isNaN não seja totalmente confiável.
+isNaN("blabla")   // true: "blabla" é convertido para número. 
+                  // A análise desse número falha e retorna NaN como resultado.
+```
+
+#### parseFloat()
+A função parseFloat() analisa um argumento string e retorna um número de ponto flutuante.
+```js
+//Os exemplo a seguir sempre retorna 3.14
+parseFloat("3.14");
+parseFloat("314e-2");
+parseFloat("0.0314E+2");
+parseFloat("3.14more non-digit characters");
+```
+
+#### parseInt()
+A função parseInt() analisa um argumento string e retorna um inteiro na base especificada.
+```js
+//Os exemplo a seguir sempre retorna 15
+parseInt(" 0xF", 16);
+parseInt(" F", 16);
+parseInt("17", 8);
+parseInt(021, 8);
+parseInt("015", 10);
+parseInt(15.99, 10);
+parseInt("FXX123", 16);
+parseInt("1111", 2);
+parseInt("15*3", 10);
+parseInt("15e2", 10);
+parseInt("15px", 10);
+parseInt("12", 13);
+```
+
+
+
 ##### decodeURI()
 ##### decodeURIComponent()
 ##### encodeURI()
