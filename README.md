@@ -211,14 +211,30 @@ O construtor de Error cria um objeto de erro. Instâncias de objetos Error são 
 new Error([message[, fileName[, lineNumber]]])
 ```
 `message`
-Opcional. Descrição do erro legível para humanos.
+Descrição do erro legível.
+
 `fileName` 
-Opcional. O valor da propriedade fileName  no objeto de erro criado. O padrão é o nome do arquivo contendo o código que chamou o construtor de Error().
+O valor da propriedade fileName  no objeto de erro criado. O padrão é o nome do arquivo contendo o código que chamou o construtor de Error().
+
 `lineNumber` 
-Opcional. O valor da propriedade lineNumber no objeto de Error criado. O padrão é o número da linha contendo a invocação do construtor Error().
+O valor da propriedade lineNumber no objeto de Error criado. O padrão é o número da linha contendo a invocação do construtor Error().
 
 
 ### EvalError
+O Objeto EvalError indica um erro em relação a função global eval(). Esta exceção não é mais lançada pelo JavaScript, no entanto, o objeto EvalError ainda permanece compatível.
+```js
+new EvalError([message[, fileName[, lineNumber]]])
+```
+`message`
+Descrição do erro legível.
+
+`fileName` 
+O nome do arquivo que contém o código que causa a exceção
+
+`lineNumber` 
+O número da linha do código que causa a exceção
+
+
 ### InternalError
 ### RangeError
 ### ReferenceError
