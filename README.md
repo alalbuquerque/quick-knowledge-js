@@ -595,6 +595,11 @@ Specifies the value to be returned by a function.
 ### class
 Declares a class.
 
+* Classes
+* constructor
+* extends
+* static
+
 ## Iterations
 
 ### do...while
