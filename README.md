@@ -364,7 +364,13 @@ Reference Array
 * array.unshift
 * array.values
 
-
+## ArrayBuffer
+* ArrayBuffer.@@species
+* arrayBuffer.byteLength
+* ArrayBuffer.isView
+* ArrayBuffer.prototype
+* arrayBuffer.slice
+* ArrayBuffer.transfer
 
 #### Criando arrays
 
