@@ -265,6 +265,10 @@ O objeto Boolean é um objeto wrapper para um valor booleano.
 new Boolean([value])
 // value Opcional. O valor inicial do objeto Boolean.
 ```
+* Boolean
+* Boolean.prototype
+* boolean.toString
+* boolean.valueOf
 
 ### Error
 O construtor de Error cria um objeto de erro. Instâncias de objetos Error são lançadas quando erros de tempo de execução ocorrem. O objeto Error também pode ser usado como objeto base para exceções definidas pelo usuário. Veja abaixo tipos de erro padrões embutidos.
