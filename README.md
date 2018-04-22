@@ -259,6 +259,32 @@ Nomes para serem usandos pela função como nomes formais de argumentos. Cada um
 `functionBody`
 Uma string que contém as instruções JavaScript que compõem a definição da função.
 
+* arguments
+* arguments.@@iterator
+* arguments.callee
+* arguments.caller
+* arguments.length
+* Arrow functions
+* AsyncFunction
+* AsyncFunction.prototype
+* Default parameters
+* Function
+* function.apply
+* function.bind
+* function.call
+* Function.length
+* Function.name
+* Function.prototype
+* function.toString
+* Functions
+* GeneratorFunction
+* GeneratorFunction.prototype
+* get
+* Method definitions
+* rest parameters
+* set
+
+
 ### Boolean 
 O objeto Boolean é um objeto wrapper para um valor booleano.
 ```js
