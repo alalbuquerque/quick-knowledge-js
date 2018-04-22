@@ -282,8 +282,87 @@ Descrição do erro legível.
 O valor da propriedade fileName  no objeto de erro criado. O padrão é o nome do arquivo contendo o código que chamou o construtor de Error().
 
 `lineNumber` 
-O valor da propriedade lineNumber no objeto de Error criado. O padrão é o número da linha contendo a invocação do construtor Error().
+O valor da propriedade lineNumber no objeto de Error criado. O padrão é o número da linha contendo a invocação do construtor `Error()`.
 
+* Error
+* error.message
+* error.name
+* Error.prototype
+* error.toString
+* Errors
+* Errors: Already has pragma
+* Errors: Array sort argument
+* Errors: Bad octal
+* Errors: Bad radix
+* Errors: Bad regexp flag
+* Errors: Bad return or yield
+* Errors: Called on incompatible type
+* Errors: Cant access lexical declaration before init
+* Errors: Cant define property object not extensible
+* Errors: Cant delete
+* Errors: Cant redefine property
+* Errors: Cyclic object value
+* Errors: Dead object
+* Errors: Delete in strict mode
+* Errors: Deprecated caller or arguments usage
+* Errors: Deprecated expression closures
+* Errors: Deprecated octal
+* Errors: Deprecated source map pragma
+* Errors: Deprecated String generics
+* Errors: Deprecated toLocaleFormat
+* Errors: Equal as assign
+* Errors: For-each-in loops are deprecated
+* Errors: Getter only
+* Errors: Identifier after number
+* Errors: Illegal character
+* Errors: in operator no object
+* Errors: Invalid array length
+* Errors: Invalid assignment left-hand side
+* Errors: Invalid const assignment
+* Errors: Invalid date
+* Errors: Invalid for-in initializer
+* Errors: Invalid for-of initializer
+* Errors: invalid right hand side instanceof operand
+* Errors: JSON bad parse
+* Errors: Malformed formal parameter
+* Errors: Malformed URI
+* Errors: Missing bracket after list
+* Errors: Missing colon after property id
+* Errors: Missing curly after function body
+* Errors: Missing curly after property list
+* Errors: Missing formal parameter
+* Errors: Missing initializer in const
+* Errors: Missing name after dot operator
+* Errors: Missing parenthesis after argument list
+* Errors: Missing parenthesis after condition
+* Errors: Missing semicolon before statement
+* Errors: More arguments needed
+* Errors: Negative repetition count
+* Errors: No non-null object
+* Errors: No properties
+* Errors: No variable name
+* Errors: Non configurable array element
+* Errors: Not a codepoint
+* Errors: Not a constructor
+* Errors: Not a function
+* Errors: Not defined
+* Errors: Precision range
+* Errors: Property access denied
+* Errors: Read-only
+* Errors: Redeclared parameter
+* Errors: Reserved identifier
+* Errors: Resulting string too large
+* Errors: Stmt after return
+* Errors: Strict Non Simple Params
+* Errors: Too much recursion
+* Errors: Typed array invalid arguments
+* Errors: Undeclared var
+* Errors: Undefined prop
+* Errors: Unexpected token
+* Errors: Unexpected type
+* Errors: Unnamed function statement
+* Errors: Unterminated string literal
+* Errors: Var hides argument
 
 ### EvalError
 O Objeto EvalError indica um erro em relação a função global eval(). Esta exceção não é mais lançada pelo JavaScript, no entanto, o objeto EvalError ainda permanece compatível.
