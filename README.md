@@ -323,6 +323,49 @@ Array é uma estrutura de dados que armazena uma coleção de elementos de tal f
 
 Mas no Javascript o `array` é um objeto global que é usado na construção dessa estrutura de dado. 
 
+Reference Array
+* array.@@iterator
+* Array.@@species
+* array.@@unscopables
+* array.concat
+* array.copyWithin
+* array.entries
+* array.every
+* array.fill
+* array.filter
+* array.find
+* array.findIndex
+* array.flatMap
+* array.flatten
+* array.forEach
+* Array.from
+* array.includes
+* array.indexOf
+* Array.isArray
+* array.join
+* array.keys
+* array.lastIndexOf
+* Array.length
+* array.map
+* Array.of
+* array.pop
+* Array.prototype
+* array.push
+* array.reduce
+* array.reduceRight
+* array.reverse
+* array.shift
+* array.slice
+* array.some
+* array.sort
+* array.splice
+* array.toLocaleString
+* array.toString
+* array.unshift
+* array.values
+
+
+
 #### Criando arrays
 
 Existe algumas forma de criar um `array`:
