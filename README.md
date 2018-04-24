@@ -1,5 +1,5 @@
 # Quick knowledge 
-Repositório contendo estudos de sobre javascript e suas abstrações. Estruturas de dados e algoritmos complementáres.
+Repositório contendo estudos de javascript. Estruturas de dados e algoritmos complementáres.
 
 ## Overview Javascript
 
