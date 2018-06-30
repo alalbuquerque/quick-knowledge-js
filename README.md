@@ -27,6 +27,8 @@ Repositório contendo estudos de javascript. Estruturas de dados e algoritmos co
 * [URIError](#urierror)
 * [Array](#array)
 
+## Sobre o JavaScript
+O JavaScript tem primitivos, objetos e funções. Todos todos eles são valores e são tratados como objetos, até mesmo os primitivos.
 
 ## Objetos Globais 
 Objetos globais se referem aos objetos no escopo global (somente se o modo estrito/strict mode do ECMAScript 5 não for usado; Nesse caso retorna undefined). O objeto global pode ser acessado usando o operador this no escopo global. De fato, o escopo global consiste em propriedades do objeto global, incluindo propriedades herdadas, se houver.
